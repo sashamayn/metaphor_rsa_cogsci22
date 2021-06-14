@@ -169,17 +169,15 @@ class System:
 		p_f_num_f_val_given_c = self.norm_acceptability[c][f_num, f_val]
 
 		if condition == 'na':
-			#one over all possible g_s
-			#which there are 400 of: 20fts x 20vals
-			p_g = 1/400
+			p_g = 1/20
 		else:
 			if condition == f_num:
 				#for instance; but fit is best when p_g is unform - explained in the paper
 				# p_g = 0.5/20
-				p_g = 1/400
+				p_g = 1/20
 			else:
-				# p_g = 0.5/380
-				p_g = 1/400
+				# p_g = 0.5/20
+				p_g = 1/20
 
 		g = f_num
 
